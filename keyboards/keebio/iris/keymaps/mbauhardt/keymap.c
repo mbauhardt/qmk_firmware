@@ -60,17 +60,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * |     |     |     |     |     |     |                |     |     |     |     |  =  |  \  |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * | LSFT|     |     |     |     |     |                |     |     |     |     |  -  | RSFT|
+     * | LSFT|     |     |     |     |     |                |     |     |     |     |     |  -  |
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
      * |     |     |     |     |     |     |     /    \     |     |     |     |     |     |     |
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
      *                      \     |     |      /        \      |     |     /
      *                       `----+-----+-----'          `-----+-----+----'
      */
-     GRV, XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , LBRC, RBRC,
+     GRV , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , LBRC, RBRC,
      XXX , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , EQL , BSLS,
-     LSFT, XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , MINS, RSFT,
-     XXX , XXX , XXX , XXX , XXX , XXX , XXX ,    XXX , XXX ,  XXX , XXX , XXX , XXX , XXX ,
+     LSFT, XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , MINS,
+     XXX , XXX , XXX , XXX , XXX , XXX , XXX ,    XXX , XXX , XXX , XXX , XXX , XXX,  XXX ,
                          LALT ,LCMD , SPC ,          XXX , XXX, XXX
   ),
 
