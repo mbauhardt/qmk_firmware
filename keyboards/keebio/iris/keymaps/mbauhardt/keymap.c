@@ -5,7 +5,7 @@ extern keymap_config_t keymap_config;
 // layer keycodes
 #define KC_XXX		KC_NO // three "XXX" for no operation
 #define KC_DVRK2	MO(1) // switch to layer dvorak2 to have additional characters
-#define KC_FN		MO(2) // fn keys, volume keys
+#define KC_FN		TG(2) // fn keys, volume keys
 #define KC_VIM		TG(3) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
 
 // VIM based shortcuts while working in a OS text editor or browser textfield
@@ -77,9 +77,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FN] = LAYOUT_kc(
     /*
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * |  F1 |  F2 |  F3 |  F4 |  F5 |  F6 |                | F7  |  F8 |  F9 | F10 | F11 | F12 |
+     * |     |  F1 |  F2 |  F3 |  F4 |  F5 |                |  F6 |  F7 |  F8 |  F9 | F10 | F11 |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * |     |     |     |     |     |     |                |     |     |     |     |     |     |
+     * |     |     |     |     |     |     |                |     |     |     |     |     | F12 |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * | LSFT|     |     |     |     |     |                |     |     |     |     |     | RSFT|
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
@@ -88,10 +88,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                      \ LALT| LCMD|      /        \      | Vol+| Vol-/
      *                       `----+-----+-----'          `-----+-----+----'
      */
-     F1  , F2  , F3  , F4  , F5  , F6  ,                F7  , F8  , F9  , F10 , F11 , F12 ,
-     XXX , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , XXX ,
+     XXX , F1  , F2  , F3  , F4  , F5  ,                F6  , F7  , F8  , F9  , F10 , F11 ,
+     XXX , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , F12 ,
      LSFT, XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , RSFT,
-     XXX , XXX , XXX , XXX , XXX , XXX , XXX ,    XXX , XXX ,  XXX , XXX , XXX , XXX , XXX ,
+     XXX , XXX , XXX , XXX , XXX , XXX , XXX ,    FN , XXX ,  XXX , XXX , XXX , XXX , XXX,
                          LALT ,LCMD , XXX ,          XXX , VOLU, VOLD
   ),
 
