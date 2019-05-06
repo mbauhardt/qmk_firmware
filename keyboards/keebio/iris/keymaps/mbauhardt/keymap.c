@@ -7,6 +7,8 @@ extern keymap_config_t keymap_config;
 #define KC_DVRK2	MO(1) // switch to layer dvorak2 to have additional characters
 #define KC_FN		TG(2) // fn keys, volume keys
 #define KC_VIM		TG(3) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
+#define KC_VSPC		LT(3, KC_SPC) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
+#define KC_VENT		LT(3, KC_ENT) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
 
 // VIM based shortcuts while working in a OS text editor or browser textfield
 #define KC_ALTL		LALT(KC_LEFT)
@@ -41,16 +43,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * | LSFT|  A  |  O  |  E  |  U  |  I  |                |  D  |  H  |  T  |  N  |  S  | RSFT|
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
-     * | LCTL|  ;  |  Q  |  J  |  K  |  X  | FN  /    \  FN |  B  |  M  |  W  |  V  |  Z  | RCTL|
+     * | LCTL|  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  | RCTL|
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
-     *                      \ LALT| LCMD| SPC  /        \  ENT | VIM |DVRK2/
+     *                      \ LALT| LCMD| VSPC  /        \  VENT | DVRK2|DVRK2/
      *                       `----+-----+-----'          `-----+-----+----'
      */
      GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,BSPC,
      TAB ,QUOT,COMM, DOT, P  , Y  ,                F  , G  , C  , R  , L  ,SLSH,
      LSFT, A  , O  , E  , U  , I  ,                D  , H  , T  , N  , S  ,RSFT,
-     LCTL,SCLN, Q  , J  , K  , X  , FN,      FN, B  , M  , W  , V  , Z  ,RCTL,
-                       LALT,LCMD, SPC,         ENT, VIM, DVRK2
+     LCTL,SCLN, Q  , J  , K  , X  ,VIM,      FN, B  , M  , W  , V  , Z  ,RCTL,
+                       LALT,LCMD, VSPC,         VENT, DVRK2, DVRK2
   ),
 
   [_DVORAK_2] = LAYOUT_kc(
