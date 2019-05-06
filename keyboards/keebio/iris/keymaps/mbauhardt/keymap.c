@@ -19,6 +19,11 @@ extern keymap_config_t keymap_config;
 #define KC_CMDX		LCMD(KC_X)
 #define KC_CMDV		LCMD(KC_V)
 
+// mod-tap's
+#define KC_CTLA	LCTL_T(KC_A)
+#define KC_CTLS	RCTL_T(KC_S)
+
+
 // layer
 #define _DVORAK		0
 #define _DVORAK_2	1
@@ -41,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * | TAB |  '  |  ,  |  .  |  P  |  Y  |                |  F  |  G  |  C  |  R  |  L  |  /  |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * | LSFT|  A  |  O  |  E  |  U  |  I  |                |  D  |  H  |  T  |  N  |  S  | RSFT|
+     * | LSFT| CTLA|  O  |  E  |  U  |  I  |                |  D  |  H  |  T  |  N  | CTLS| RSFT|
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
      * | LCTL|  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  | RCTL|
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
@@ -50,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
      GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,BSPC,
      TAB ,QUOT,COMM, DOT, P  , Y  ,                F  , G  , C  , R  , L  ,SLSH,
-     LSFT, A  , O  , E  , U  , I  ,                D  , H  , T  , N  , S  ,RSFT,
+     LSFT,CTLA, O  , E  , U  , I  ,               D  , H  , T  , N  ,CTLS,RSFT,
      LCTL,SCLN, Q  , J  , K  , X  ,VIM,      FN, B  , M  , W  , V  , Z  ,RCTL,
                        LALT,LCMD, VSPC,         VENT, DVRK2, DVRK2
   ),
