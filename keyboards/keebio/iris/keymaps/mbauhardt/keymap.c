@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DVORAK] = LAYOUT_kc(
     /*
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * | GESC|  1  |  2  |  3  |  4  |  5  |                |  6  |  7  |  8  |  9  |  0  | BSPC|
+     * | GESC|  1  |  2  |  3  |  4  |  5  |                |  6  |  7  |  8  |  9  |  0  |     |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * | TAB |  '  |  ,  |  .  |  P  |  Y  |                |  F  |  G  |  C  |  R  |  L  |  /  |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
@@ -58,14 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
      * |     |  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  |     |
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
-     *                      \     |     | VSPC  /        \  VENT | DVRK2|DVRK2/
+     *                      \     | DEL | VSPC  /        \ VENT| BSPC|DVRK2/
      *                       `----+-----+-----'          `-----+-----+----'
      */
-     GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,BSPC,
+     GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  , XXX,
      TAB ,QUOT,COMM, DOT, P  , Y  ,                F  , G  , C  , R  , L  ,SLSH,
      XXX ,SFTA,CTLO,ALTE,CMDU, I  ,                D  ,CMDH,ALTT,CTLN,SFTS, XXX,
      XXX ,SCLN, Q  , J  , K  , X  ,VIM,      FN, B  , M  , W  , V  , Z  ,   XXX,
-                       XXX,XXX, VSPC,         VENT, DVRK2, DVRK2
+                       XXX,DEL, VSPC,         VENT, BSPC, DVRK2
   ),
 
   [_DVORAK_2] = LAYOUT_kc(
