@@ -19,9 +19,17 @@ extern keymap_config_t keymap_config;
 #define KC_CMDX		LCMD(KC_X)
 #define KC_CMDV		LCMD(KC_V)
 
-// mod-tap's
-#define KC_CTLA	LCTL_T(KC_A)
-#define KC_CTLS	RCTL_T(KC_S)
+// mod-tap's left
+#define KC_SFTA		LSFT_T(KC_A)
+#define KC_CTLO		LCTL_T(KC_O)
+#define KC_ALTE		LALT_T(KC_E)
+#define KC_CMDU		LCMD_T(KC_U)
+
+// mod-tap's right
+#define KC_SFTS		RSFT_T(KC_S)
+#define KC_CTLN		RCTL_T(KC_N)
+#define KC_ALTT		RALT_T(KC_T)
+#define KC_CMDH		RCMD_T(KC_H)
 
 
 // layer
@@ -46,18 +54,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * | TAB |  '  |  ,  |  .  |  P  |  Y  |                |  F  |  G  |  C  |  R  |  L  |  /  |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * | LSFT| CTLA|  O  |  E  |  U  |  I  |                |  D  |  H  |  T  |  N  | CTLS| RSFT|
+     * |     | SFTA| CTLO| ALTE| CMDU|  I  |                |  D  | CMDH| ALTT| CTLN| SFTS|     |
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
-     * | LCTL|  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  | RCTL|
+     * |     |  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  |     |
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
-     *                      \ LALT| LCMD| VSPC  /        \  VENT | DVRK2|DVRK2/
+     *                      \     |     | VSPC  /        \  VENT | DVRK2|DVRK2/
      *                       `----+-----+-----'          `-----+-----+----'
      */
      GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,BSPC,
      TAB ,QUOT,COMM, DOT, P  , Y  ,                F  , G  , C  , R  , L  ,SLSH,
-     LSFT,CTLA, O  , E  , U  , I  ,               D  , H  , T  , N  ,CTLS,RSFT,
-     LCTL,SCLN, Q  , J  , K  , X  ,VIM,      FN, B  , M  , W  , V  , Z  ,RCTL,
-                       LALT,LCMD, VSPC,         VENT, DVRK2, DVRK2
+     XXX ,SFTA,CTLO,ALTE,CMDU, I  ,                D  ,CMDH,ALTT,CTLN,SFTS, XXX,
+     XXX ,SCLN, Q  , J  , K  , X  ,VIM,      FN, B  , M  , W  , V  , Z  ,   XXX,
+                       XXX,XXX, VSPC,         VENT, DVRK2, DVRK2
   ),
 
   [_DVORAK_2] = LAYOUT_kc(
