@@ -4,7 +4,7 @@ extern keymap_config_t keymap_config;
 
 // layer keycodes
 #define KC_XXX		KC_NO // three "XXX" for no operation
-#define KC_NUM		MO(1) // switch to layer dvorak2 to have additional characters
+#define KC_NUM		MO(1) // switch to layer num to have numbers and additional characters
 #define KC_FN		TG(2) // fn keys, volume keys
 #define KC_VIM		TG(3) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
 #define KC_VSPC		LT(3, KC_SPC) // "VIM" mode, this layer is there to navigate in a browser or os related editor which is not vim based
@@ -58,16 +58,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
      * |     | SFTA| CTLO| ALTE| CMDU|  I  |                |  D  | CMDH| ALTT| CTLN| SFTS|     |
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
-     * |     |  ;  |  Q  |  J  |  K  |  X  | VIM /    \  FN |  B  |  M  |  W  |  V  |  Z  |     |
+     * |     |  ;  |  Q  |  J  |  K  |  X  | VIM /    \     |  B  |  M  |  W  |  V  |  Z  |     |
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
-     *                      \     | DEL | VSPC  /        \ VENT| BSPC| NUM /
+     *                      \  FN | DEL | VSPC  /        \ VENT| BSPC| NUM /
      *                       `----+-----+-----'          `-----+-----+----'
      */
      GESC, 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  , XXX,
      TAB ,QUOT,COMM, DOT, P  , Y  ,                F  , G  , C  , R  , L  , XXX,
      XXX ,SFTA,CTLO,ALTE,CMDU, I  ,                D  ,CMDH,ALTT,CTLN,SFTS, XXX,
-     XXX ,SCLN, Q  , J  , K  , X  ,VIM,        FN, B  , M  , W  , V  , Z  , XXX,
-                       XXX,DEL, VSPC,         VENT, BSPC, NUM
+     XXX ,SCLN, Q  , J  , K  , X  ,VIM,       XXX, B  , M  , W  , V  , Z  , XXX,
+                        FN, DEL,VSPC,         VENT, BSPC, NUM
   ),
 
   [_NUM] = LAYOUT_kc(
@@ -94,22 +94,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FN] = LAYOUT_kc(
     /*
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * |     |  F1 |  F2 |  F3 |  F4 |  F5 |                |  F6 |  F7 |  F8 |  F9 | F10 | F11 |
+     * |     |  F1 |  F2 |  F3 |  F4 |  F5 |                |  F6 |  F7 |  F8 |  F9 | F10 |     |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * |     |     |     |     |     |     |                |     |     |     |     |     | F12 |
+     * |     |     |     |     |     |     |                |     |     |     | F11 | F12 |     |
      * +-----+-----+-----+-----+-----+-----+                +-----+-----+-----+-----+-----+-----+
-     * | LSFT|     |     |     |     |     |                |     |     |     |     |     | RSFT|
+     * |     | LSFT| LCTL| LALT| LCMD|     |                |     | RCMD| RALT| RCTL| RSFT|     |
      * +-----+-----+-----+-----+-----+-----+-----.    ,-----+-----+-----+-----+-----+-----+-----+
-     * |     |     |     |     |     |     |     /    \     |     |     |     |     |     |     |
+     * |     |     |     |     |     |     |Vol+ /    \     |     |     |     |     |     |     |
      * +-----+-----+-----+--+--+-----+-----+----/      \----+-----+-----+--+--+-----+-----+-----+
-     *                      \ LALT| LCMD|      /        \      | Vol+| Vol-/
+     *                      \  L0 |     | Vol- /        \      |     |     /
      *                       `----+-----+-----'          `-----+-----+----'
      */
-     XXX , F1  , F2  , F3  , F4  , F5  ,                F6  , F7  , F8  , F9  , F10 , F11 ,
-     XXX , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , F12 ,
-     LSFT, XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , XXX , XXX , RSFT,
-     XXX , XXX , XXX , XXX , XXX , XXX , XXX ,    FN , XXX ,  XXX , XXX , XXX , XXX , XXX,
-                         LALT ,LCMD , XXX ,          XXX , VOLU, VOLD
+     XXX , F1  , F2  , F3  , F4  , F5  ,                F6  , F7  , F8  , F9  , F10 , XXX ,
+     XXX , XXX , XXX , XXX , XXX , XXX ,                XXX , XXX , XXX , F11 , F12 , XXX ,
+     XXX , LSFT, LCTL, LALT, LCMD, XXX ,                XXX , RCMD, RALT, RCTL, RSFT, XXX ,
+     XXX , XXX , XXX , XXX , XXX , XXX , VOLU,    FN , XXX ,  XXX , XXX , XXX , XXX , XXX,
+                            FN, XXX , VOLD,          XXX , XXX , XXX
   ),
 
   [_VIM] = LAYOUT_kc(
