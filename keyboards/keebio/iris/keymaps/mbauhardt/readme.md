@@ -11,3 +11,10 @@ To make use of this file you will need follow the following steps:
 * You are now ready to compile or use your keymap with the source
 
 More information can be found in the QMK docs: <https://docs.qmk.fm>
+
+# The Layer's
+
+## Default Layer - Dvorak Layout
+
+![Layer 0](layer_0.png)
+
