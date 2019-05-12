@@ -25,7 +25,15 @@ width="796" height="283"/>
 <img src="https://mbauhardt.keybase.pub/keebio_iris/layer_1.png"
 width="796" height="283"/>
 
-## Layer 2 - Numbers and Special Characters
+
+## Layer 2 - Numbers and additional Characters
 
 <img src="https://mbauhardt.keybase.pub/keebio_iris/layer_2.png"
 width="796" height="283"/>
+
+
+## Layer 3 - Function and media keys
+
+<img src="https://mbauhardt.keybase.pub/keebio_iris/layer_3.png"
+width="796" height="283"/>
+
