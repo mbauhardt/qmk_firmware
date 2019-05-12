@@ -16,5 +16,6 @@ More information can be found in the QMK docs: <https://docs.qmk.fm>
 
 ## Default Layer - Dvorak Layout
 
-![Layer 0|796x283](https://mbauhardt.keybase.pub/keebio_iris/layer_0.png)
+<img src="https://mbauhardt.keybase.pub/keebio_iris/layer_0.png"
+width="796" height="283"/>
 
