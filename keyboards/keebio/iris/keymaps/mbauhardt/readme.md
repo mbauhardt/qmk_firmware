@@ -19,3 +19,13 @@ More information can be found in the QMK docs: <https://docs.qmk.fm>
 <img src="https://mbauhardt.keybase.pub/keebio_iris/layer_0.png"
 width="796" height="283"/>
 
+
+## Layer 1 - Navigation like I do in Vim
+
+<img src="https://mbauhardt.keybase.pub/keebio_iris/layer_1.png"
+width="796" height="283"/>
+
+## Layer 2 - Numbers and Special Characters
+
+<img src="https://mbauhardt.keybase.pub/keebio_iris/layer_2.png"
+width="796" height="283"/>
