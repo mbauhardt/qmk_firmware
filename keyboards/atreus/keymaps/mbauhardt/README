@@ -1,0 +1,4 @@
+source ~/venvs/qmk/bin/activate
+bin/qmk compile keyboards/atreus/keymaps/mbauhardt/mbauhardt.json
+make atreus/astar:mbauhardt:flash
+
