@@ -1,0 +1,4 @@
+source ~/venvs/qmk/bin/activate
+sudo make planck/rev4:mbauhardt:dfu
+
+
