@@ -1,0 +1,22 @@
+install qmk
+
+    python3 -m pip install --user qmk
+
+
+run the setup
+
+    qmk setup --home ~/usr/src/qmk_firmware --baseurl ssh://git@github.com --branch mbauhardt mbauhardt/qmk_firmware
+
+
+if you have an downloaded file
+
+    qmk json2c -o ~/usr/src/qmk_firmware/keyboards/atreus/keymaps/mbauhardt/keymap.c ~/Downloads/keymap.json
+
+
+but usually the c file is in git, so you can run
+
+    qmk compile --keyboard atreus --keymap mbauhardt
+    qmk flash --keyboard atreus --keymap mbauhardt
+
+
+
